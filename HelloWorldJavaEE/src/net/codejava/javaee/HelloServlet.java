@@ -30,8 +30,10 @@ public class HelloServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		String yourName = request.getParameter("yourName");
+		String age = request.getParameter("age");
 		PrintWriter writer = response.getWriter();
 		writer.println("<h1>Hello " + yourName + "</h1>");
+		writer.println("<h1>Hello your Age is " + age + "</h1>");
 		writer.close();
 	}
 
