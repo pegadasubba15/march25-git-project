@@ -33,7 +33,7 @@ public class HelloServlet extends HttpServlet {
 		String age = request.getParameter("age");
 		PrintWriter writer = response.getWriter();
 		writer.println("<h1>Hello " + yourName + "</h1>");
-		writer.println("<h1>Hello " + age + "</h1>");
+		writer.println("<h1>Hello ageeee" + age + "</h1>");
 		writer.close();
 	}
 
